@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100svw;
+  height: 100vsh;
+  background-color: white;
+}
+
+.body-wrapper {
+  width: 100%;
+  height: 100%;
+  padding-inline: 90px;
+}
+
+/* NAV BAR CONTAINING LOGO AND SHOPPING CART */
+
+.nav-bar {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 4px solid rgba(228, 228, 228, 1);
+  padding-inline: 2px;
+}
+
+.logo {
+  width: 159px;
+  height: 25.216px;
+  cursor: pointer;
+}
+
+.cart {
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+}
+
+
+/* MAIN SECTION */
+.main {
+  width: 100%;
+  border-block: 4px solid red;
+}
+
+.main-box1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-box2 {
+  width: 100%;
+  height: 553px;
+
+  > img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.main-box3 {
+  display: flex;
+}
+
+.left-box {
+  width: 60%;
+}
+
+.right-box {
+  width: 40%;
+}
+
+/* SECTION */
+
+.section-box1 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-price {
+  /* width: 12%; */
+  display: flex;
+}
+
+.section-box2 {
+  display: flex;
+}
+
+.lc-top-box {
+  border-bottom: 4px solid red;
+}
+
+.rc-top {
+  display: flex;
+}
+
+.rc-bottom {
+  display: flex;
+}
+
+.page-scroller {
+  text-align: center;
+}
+
+.ps-holder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
