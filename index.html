@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bejamas</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Archivo font url from google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
   <div class="body-wrapper">
@@ -21,31 +25,32 @@
         <div class="main">
 
           <div class="main-box1">
-            <div class="">
+            <div class="h1">
               <h1>Samurai King Resting</h1>
             </div>
 
-            <div class="">
+            <div class="atc-btn">
               <button>ADD TO CART</button>
             </div>
           </div>
 
           <div class="main-box2">
             <img src="/assets/images/samurai-king-dog.png" alt="A dog (samurai king resting)">
+            <button class="relative-btn">Photo of the day</button>
           </div>
 
           <div class="main-box3">
             <div class="left-box">
               <h3>About the Samurai King Resting</h3>
 
-              <p>Pets</p>
+              <p class="pets">Pets</p>
 
               <div class="left-box-p">
-                <p>
+                <p class="first">
                   So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder 
                 </p>
 
-                <p>
+                <p class="second">
                   text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock.
                 </p>
               </div>
@@ -65,7 +70,7 @@
               <div class="details">
                 <h3>Details</h3>
 
-                <p>Size: 1020 x 1020 pixel</p>
+                <p class="size-1020">Size: 1020 x 1020 pixel</p>
 
                 <p>Size: 15 mb</p>
               </div>
@@ -79,16 +84,16 @@
     <section>
       <div class="section">
         <div class="section-box1">
-          <h2>Photography / Premium Photos</h2>
+          <h2>Photography <span class="slash">/</span> <span class="grey">Premium Photos</span></h2>
 
-          <div class="sort-price">
-            <img src="/assets/images/sort.png" alt="">
+          <div class="sort-price"> <!-- sort-price -->
+            <img class="sort-icon" src="/assets/images/sort.png" alt="">
 
             <p>Sort By</p>
 
             <p>Price</p>
 
-            <img src="/assets/images/Vector 16.png" alt="">
+            <img class="down-arrow-icon" src="/assets/images/Vector 16.png" alt="">
           </div>
         </div>
 
@@ -163,10 +168,11 @@
 
           <div class="right-container">
             <div class="rc-top">
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="best-seller-btn">Best Seller</button>
+                  <button class="rc-atc-btn rc-atc-btn1">ADD TO CART</button>
                 </div>
                 <p>People</p>
   
@@ -175,10 +181,10 @@
                 <p>$3.89</p>
               </div>
   
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.1.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="rc-atc-btn">ADD TO CART</button>
                 </div>
                 <p>Food</p>
   
@@ -187,10 +193,10 @@
                 <p>$93.89</p>
               </div>
   
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.1.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="rc-atc-btn">ADD TO CART</button>
                 </div>
                 <p>Food</p>
   
@@ -201,10 +207,10 @@
             </div>
 
             <div class="rc-bottom">
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.4.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="rc-atc-btn">ADD TO CART</button>
                 </div>
                 <p>People</p>
   
@@ -213,10 +219,10 @@
                 <p>$100.00</p>
               </div>
   
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.5.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="rc-atc-btn">ADD TO CART</button>
                 </div>
                 <p>Landmarks</p>
   
@@ -225,10 +231,10 @@
                 <p>$101.00</p>
               </div>
   
-              <div class="img-details">
+              <div class="rc-img-details">
                 <div class="img-text-holder">
                   <img src="/assets/images/Rectangle 2.5.png" alt="">
-                  <button>ADD TO CART</button>
+                  <button class="rc-atc-btn">ADD TO CART</button>
                 </div>
                 <p>Landmarks</p>
   
@@ -247,10 +253,10 @@
         <div class="ps-holder">
           <img src="/assets/images/Vector 1.png" alt="">
 
-          <p>1</p>
-          <p>2</p>
-          <p>3</p>
-          <p>4</p>
+          <p class="one">1</p>
+          <p class="two">2</p>
+          <p class="three">3</p>
+          <p class="four">4</p>
 
           <img src="/assets/images/Vector 2.png" alt="">
         </div>

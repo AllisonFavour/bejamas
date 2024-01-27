@@ -5,14 +5,16 @@
 }
 
 body {
-  width: 100svw;
-  height: 100vsh;
-  background-color: white;
+  width: 100%;
+  height: 100svh;
+  background-color: rgba(255, 255, 255, 1);
+  font-family: 'Archivo', sans-serif;
 }
 
 .body-wrapper {
   width: 100%;
   height: 100%;
+  margin: 0 auto;
   padding-inline: 90px;
 }
 
@@ -23,7 +25,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 4px solid rgba(228, 228, 228, 1);
   padding-inline: 2px;
 }
 
@@ -43,7 +44,9 @@ body {
 /* MAIN SECTION */
 .main {
   width: 100%;
-  border-block: 4px solid red;
+  border-block: 4px solid rgba(228, 228, 228, 1);
+  padding-block-start: 62px;
+  padding-block-end: 65px;
 }
 
 .main-box1 {
@@ -52,63 +55,341 @@ body {
   align-items: center;
 }
 
+.main-box1 .h1 > h1 {
+  width: 347px;
+  height: 39px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.main-box1 .atc-btn > button {
+  width: 257px;
+  height: 47px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1.61px;
+  cursor: pointer;
+}
+
 .main-box2 {
   width: 100%;
   height: 553px;
+  margin-block: 42px;
 
   > img {
     width: 100%;
     height: 100%;
+
+    position: relative;
   }
 }
 
+.main-box2 .relative-btn {
+  width: 272px;
+  height: 67px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+
+  position: relative;
+  left: 1px;
+  bottom: 71px;
+}
+
 .main-box3 {
-  display: flex;
-}
-
-.left-box {
-  width: 60%;
-}
-
-.right-box {
-  width: 40%;
-}
-
-/* SECTION */
-
-.section-box1 {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
 
-.sort-price {
-  /* width: 12%; */
+.left-box > h3 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 8px;
+}
+
+.left-box > p {
+  color: rgba(101, 101, 101, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 12px;
+}
+
+.left-box-p {
+  width: 690px;
+  /* height: 299px; */
+  color: rgba(101, 101, 101, 1);
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.left-box-p > .first {
+  margin-block-end: 28px;
+}
+
+.main-box3 .right-box {
+  /* width: 30%; */
+  text-align: right;
+  align-items: last baseline;
+}
+
+.right-box > h3 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 28px;
+}
+
+.img-holder {
   display: flex;
+  gap: 30px;
+  margin-block-end: 50px;
+}
+
+.img-holder > img {
+  width: 117px;
+  height: 147px;
+}
+
+.details > h3 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 10px;
+}
+
+.details > p {
+  color: rgba(101, 101, 101, 1);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.details > .size-1020 {
+  margin-block-end: 8px;
+}
+
+/* SECTION AFTER MAIN */
+.section {
+  width: 100%;
+  padding-block-start: 60px;
+}
+
+.section-box1 {
+  width: 100%;
+  /* height: 6%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: first baseline;
+}
+
+.section-box1 > h2 {
+  color: rgba(0, 0, 0, 1);
+  font-size: 30px;
+  font-weight: 700;
+  margin-block-end: 62px;
+}
+
+.section-box1 .slash {
+  color: rgba(0, 0, 0, 1);
+  font-size: 34px;
+  font-weight: 600;
+}
+
+.section-box1 .grey {
+  color: rgba(155, 155, 155, 1);
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.section-box1 .sort-price {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.sort-price .sort-icon {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.sort-price .down-arrow-icon {
+  width: 16px;
+  height: 8px;
+  cursor: pointer;
 }
 
 .section-box2 {
+  width: 100%;
   display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+.section-box2 .left-container {
+  width: 20%;
+}
+
+.lc-top-box > p,
+.lc-bottom-box p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 44px;
+}
+
+.label-input,
+.price-range {
+  display: flex;
+  gap: 12px;
+  margin-block-end: 40px;
+}
+
+.label-input label,
+.price-range label {
+  color: rgba(29, 29, 29, 1);
+  font-size: 22px;
+  font-weight: 400;
 }
 
 .lc-top-box {
-  border-bottom: 4px solid red;
+  border-bottom: 1px solid rgba(194, 194, 194, 1);
+}
+
+.lc-bottom-box {
+  padding-block-start: 30px;
+}
+
+.section-box2 .right-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* .rc-img-details {
+  width: 282px;
+} */
+
+.img-text-holder {
+  width: 282px;
+  height: 392px;
+  margin-block-end: 10px;
+  /* position: relative; */
+
+  > img {
+    width: 100%;
+    height: 392px;
+  }
+}
+
+.best-seller-btn {
+  width: 128px;
+  height: 28px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
+  font-size: 20px;
+  font-weight: 400;
+  border: none;
+
+  position: relative;
+  top: -390px;
+  left: 0;
+  z-index: 3;
+}
+
+.img-text-holder .rc-atc-btn {
+  width: 100%;
+  height: 46px;
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 1);
+  font-size: 23px;
+  font-weight: 500;
+  letter-spacing: 1.61px;
+  cursor: pointer;
+
+  position: relative;
+  bottom: 50px;
+  left: 0;
+}
+
+.img-text-holder .rc-atc-btn1 {
+  position: relative;
+  bottom: 80px;
+  left: 0;
+}
+
+.rc-img-details p {
+  color: rgba(101, 101, 101, 1);
+  font-size: 22px;
+  font-weight: 700;
+  margin-block-end: 6px;
+}
+
+.rc-img-details p + p {
+  color: rgba(0, 0, 0, 1);
+  font-size: 34px;
+  font-weight: 700;
+  margin-block-end: 10px;
+}
+
+.rc-img-details p + p + p{
+  color: rgba(101, 101, 101, 1);
+  font-size: 29px;
+  font-weight: 400;
+  margin-block-end: 0;
 }
 
 .rc-top {
+  width: 100%;
   display: flex;
+  gap: 50px;
+  margin-block-end: 52px;
 }
 
 .rc-bottom {
+  width: 100%;
   display: flex;
+  gap: 50px;
+  margin-block-end: 100px;
 }
 
+/* PAGE SCROLLER AT THE BOTTOM OF THE PAGE */
+
 .page-scroller {
+  width: 100%;
   text-align: center;
+  padding-block-end: 50px;
 }
 
 .ps-holder {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
+}
+
+.ps-holder img {
+  width: 8px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.ps-holder p {
+  color: rgba(180, 180, 180, 1);
+  font-size: 29px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.ps-holder .three:focus-visible {
+  color: rgba(0, 0, 0, 1);
+  font-size: 29px;
+  font-weight: 600;
 }
