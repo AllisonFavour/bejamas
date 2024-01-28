@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100svh;
   background-color: rgba(255, 255, 255, 1);
-  font-family: 'Archivo', sans-serif;
+  font-family: "Archivo", sans-serif;
 }
 
 .body-wrapper {
@@ -39,7 +39,6 @@ body {
   height: 54px;
   cursor: pointer;
 }
-
 
 /* MAIN SECTION */
 .main {
@@ -86,6 +85,11 @@ body {
   }
 }
 
+/* To hide add to cart button on bigger screens above 800px */
+.atc-btn-small {
+  display: none;
+}
+
 .main-box2 .relative-btn {
   width: 272px;
   height: 67px;
@@ -114,7 +118,7 @@ body {
   margin-block-end: 8px;
 }
 
-.left-box > p {
+.left-box > .pets {
   color: rgba(101, 101, 101, 1);
   font-size: 22px;
   font-weight: 700;
@@ -131,12 +135,15 @@ body {
   line-height: 150%;
 }
 
+.small-screen-p {
+  display: none;
+}
+
 .left-box-p > .first {
   margin-block-end: 28px;
 }
 
 .main-box3 .right-box {
-  /* width: 30%; */
   text-align: right;
   align-items: last baseline;
 }
@@ -184,7 +191,6 @@ body {
 
 .section-box1 {
   width: 100%;
-  /* height: 6%; */
   display: flex;
   justify-content: space-between;
   align-items: first baseline;
@@ -219,6 +225,11 @@ body {
   width: 15px;
   height: 15px;
   cursor: pointer;
+}
+
+/* To hide the icon for bigger screens */
+.sb1-icon {
+  display: none;
 }
 
 .sort-price .down-arrow-icon {
@@ -339,7 +350,7 @@ body {
   margin-block-end: 10px;
 }
 
-.rc-img-details p + p + p{
+.rc-img-details p + p + p {
   color: rgba(101, 101, 101, 1);
   font-size: 29px;
   font-weight: 400;
@@ -392,4 +403,383 @@ body {
   color: rgba(0, 0, 0, 1);
   font-size: 29px;
   font-weight: 600;
+}
+
+/* MEDIA QUERY FOR SMALL SCREEN DEVICES LIKE MOBILE PHONES */
+@media (max-width: 1300px) {
+  html {
+    width: 390px;
+    margin: 0 auto;
+  }
+
+  body {
+    width: 390px;
+    height: 100%;
+  }
+
+  .body-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding-inline: 1px;
+  }
+
+  /* NAV BAR CONTAINING LOGO AND SHOPPING CART */
+
+  .nav-bar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 34px;
+  }
+
+  .logo {
+    width: 124px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .cart {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+  }
+
+  /* MAIN SECTION */
+  .main {
+    width: 100%;
+    border-block: 4px solid rgba(228, 228, 228, 1);
+    padding-block-start: 32px;
+    padding-block-end: 36px;
+  }
+
+  .main-box1 {
+    display: block;
+    padding-inline: 20px;
+  }
+
+  .main-box1 .h1 > h1 {
+    width: 347px;
+    height: 39px;
+    font-size: 32px;
+    font-weight: 700;
+  }
+
+  .main-box1 .atc-btn {
+    display: none;
+  }
+
+  .main-box2 {
+    width: 362px;
+    height: 239px;
+    margin-block: 30px;
+    margin-inline: 20px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+
+      position: relative;
+    }
+  }
+
+  .main-box2 .relative-btn {
+    width: 226px;
+    height: 56px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+
+    position: relative;
+    left: 1px;
+    bottom: 60px;
+  }
+
+  /* To show the add to cart button on smaller screens below 800px */
+  .atc-btn-small {
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    margin-block-end: 30px;
+  }
+
+  .atc-btn-small > button {
+    width: 362px;
+    height: 60px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1.61px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .main-box3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-inline: 20px;
+  }
+
+  .left-box,
+  .right-box {
+    width: 362px;
+  }
+
+  .left-box > h3 {
+    width: 362px;
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-block-end: 22px;
+  }
+
+  /* To hide the p tags in the left-box container */
+
+  .left-box > .pets {
+    display: none;
+  }
+
+  /* To hide the p tags in the left-box container */
+
+  .left-box-p {
+    display: none;
+  }
+
+  .small-screen-p {
+    display: block;
+    width: 362px;
+    color: rgba(101, 101, 101, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-block-end: 50px;
+  }
+
+  .main-box3 .right-box {
+    text-align: left;
+  }
+
+  .right-box > h3 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-block-end: 30px;
+  }
+
+  .img-holder {
+    display: flex;
+    gap: 26px;
+    margin-block-end: 50px;
+  }
+
+  .img-holder > img {
+    width: 100px;
+    height: 124px;
+  }
+
+  .details > h3 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-block-end: 22px;
+  }
+
+  .details > p {
+    color: rgba(101, 101, 101, 1);
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+  .details > .size-1020 {
+    margin-block-end: 14px;
+  }
+
+  /* SECTION AFTER MAIN */
+  .section {
+    width: 100%;
+    padding-block-start: 60px;
+    padding-inline: 20px;
+  }
+
+  .section-box1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-block-end: 30px;
+  }
+
+  .section-box1 > h2 {
+    color: rgba(0, 0, 0, 1);
+    font-size: 18px;
+    font-weight: 700;
+    margin-block-end: 0;
+  }
+
+  .section-box1 .slash {
+    color: rgba(0, 0, 0, 1);
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .section-box1 .grey {
+    color: rgba(155, 155, 155, 1);
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  /* To hide the icons in section-box1 for small screen */
+  .section-box1 .sort-price {
+    display: none;
+  }
+
+  /* To show this icon in section-box1 for small screens */
+  .sb1-icon {
+    display: block;
+    width: 29px;
+    height: 29px;
+
+    > img {
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+  }
+
+  .section-box2 {
+    width: 100%;
+  }
+
+  /* To hide the .left-container in .section-box2 which contains the category of checkboxes on small screens */
+  .section-box2 .left-container {
+    display: none;
+  }
+
+  .section-box2 .right-container {
+    display: block;
+  }
+
+  .right-container .rc-top {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .img-text-holder {
+    width: 362px;
+    margin-block-end: 10px;
+
+    > img {
+      width: 100%;
+      height: 392px;
+    }
+  }
+
+  .best-seller-btn {
+    width: 128px;
+    height: 28px;
+    background-color: rgba(255, 255, 255, 1);
+    color: rgba(0, 0, 0, 1);
+    font-size: 20px;
+    font-weight: 400;
+    border: none;
+
+    position: relative;
+    top: -390px;
+    left: 0;
+    z-index: 3;
+  }
+
+  .img-text-holder .rc-atc-btn {
+    width: 100%;
+    height: 46px;
+    background-color: rgba(0, 0, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 23px;
+    font-weight: 500;
+    letter-spacing: 1.61px;
+    cursor: pointer;
+
+    position: relative;
+    bottom: 50px;
+    left: 0;
+  }
+
+  .img-text-holder .rc-atc-btn1 {
+    position: relative;
+    bottom: 80px;
+    left: 0;
+  }
+
+  .rc-img-details p {
+    color: rgba(101, 101, 101, 1);
+    font-size: 22px;
+    font-weight: 700;
+    margin-block-end: 8px;
+  }
+
+  .rc-img-details p + p {
+    color: rgba(0, 0, 0, 1);
+    font-size: 34px;
+    font-weight: 700;
+    margin-block-end: 12px;
+  }
+
+  .rc-img-details p + p + p {
+    color: rgba(101, 101, 101, 1);
+    font-size: 29px;
+    font-weight: 400;
+    margin-block-end: 0;
+  }
+
+  .right-container .rc-bottom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-block-end: 80px;
+  }
+
+  /* PAGE SCROLLER AT THE BOTTOM OF THE PAGE */
+
+  .page-scroller {
+    width: 90%;
+    text-align: center;
+    margin-inline: 20px;
+    padding-block-end: 50px;
+  }
+
+  .ps-holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .ps-holder img {
+    width: 8px;
+    height: 16px;
+    cursor: pointer;
+  }
+
+  .ps-holder p {
+    color: rgba(180, 180, 180, 1);
+    font-size: 29px;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .ps-holder .three:focus-visible {
+    color: rgba(0, 0, 0, 1);
+    font-size: 29px;
+    font-weight: 600;
+  }
 }
